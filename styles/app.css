@@ -1,6 +1,7 @@
 :root{
     --orange:#E76F51;
     --withe:#fff;
+    --dark:#3B3735;
 }
 
 
@@ -60,7 +61,7 @@ a{
     display: block;
     width: 5.5rem;
     height: 5.5rem;
-    margin-right: 3rem;
+    margin-right: 4rem;
 
 }
 .app-logo__img{
@@ -78,6 +79,30 @@ a{
 }
 .menu__link{
     color: #D2D2D2;
+    transition: color 100ms ease-in;
+}
+.menu__link:hover{
+    color: var(--withe);
+}
+
+.menu__link--active{
+    color: var(--withe );
+    position: relative;
+    z-index: 1;
+}
+.menu__link--active::before{
+    content: ' ';
+    position: absolute;
+    width: 4rem;
+    height: 0.3rem;
+    background-color: var(--orange);
+    border-radius: 10rem;
+    transform: translateY(1rem) rotate(45deg);
+    z-index: -1;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+   
 }
 
 
@@ -145,9 +170,16 @@ a{
     border: 1px solid var(--withe);
     padding: 1rem 2.5rem;
     border-radius: 2rem;
+    transition: all 250ms ease-in;
     
 
 
+}
+
+.header__link--border:hover{
+    background-color: var(--withe);
+
+    color: var(--orange);
 }
 .nav__btn{
     background: var(--withe);
