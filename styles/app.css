@@ -13,3 +13,18 @@ body{
     font-family: "roboto";
     font-size: 1.6rem;      /* font => 1rem = 10px*/
 }
+
+
+
+
+/* --Reset styles-- */
+a{
+    text-decoration: none;
+}
+
+
+
+/* --Helper classes-- */
+
+
+/* --App styles-- */
