@@ -1,3 +1,9 @@
+:root{
+    --orange:#E76F51;
+}
+
+
+
 html{
     box-sizing: border-box;
     font-size: 62.5%;  /* = font-size = 10 px =>   */
@@ -28,3 +34,113 @@ a{
 
 
 /* --App styles-- */
+
+.header{
+    background:linear-gradient(rgba(59,55,53,0.5) , rgba(59,55,53,0.5)) , url(/images/header-bg.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+}
+.app-logo{
+    width: 5.5rem;
+    height: 5.5rem;
+
+}
+.app-logo__img{
+    width: 100%;
+    height: 100%;
+
+}
+.menu{
+    display: none ;
+}
+.menu__itme{
+
+}
+.menu__link{
+
+}
+.nav-menu{ 
+    display: none;
+
+}
+
+.mobile-menu{
+
+}
+.mobile-menu__itme{
+
+}
+.mobile-menu__link{
+
+}
+{
+
+}
+.nav-menu__links{
+
+}
+.nav-menu__link{
+
+}
+.nav-menu__link--border{
+
+}
+
+.header__links{
+
+    display: none;
+
+}
+.header__link{
+
+}
+.header__link--border{
+
+}
+.nav__btn{
+    background: #fff;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav__btn-line{
+    display: block;
+    width: 3rem;
+    height: 0.3rem;
+    background:var(--orange);
+    border-radius: 2rem;
+    position: relative;
+}
+
+.nav__btn-line::before,
+.nav__btn-line::after{
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 0.3rem;
+    background:var(--orange);
+    border-radius: 2rem;
+
+}
+
+.nav__btn-line::before{
+    top: -.8rem;
+}
+.nav__btn-line::after{
+    top: .8rem;
+}
+
+
