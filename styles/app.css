@@ -1,5 +1,6 @@
 :root{
     --orange:#E76F51;
+    --withe:#fff;
 }
 
 
@@ -39,6 +40,8 @@ a{
     background:linear-gradient(rgba(59,55,53,0.5) , rgba(59,55,53,0.5)) , url(/images/header-bg.jpg);
     background-position: center;
     background-size: cover; 
+    min-height: 55rem;
+    border-radius: 0px 0px 8rem 8rem;
 }
 
 
@@ -46,12 +49,18 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2.5rem 0;
 
 }
+.nav__wrapper{
+    display: flex;
+    align-items: center;
+}
 .app-logo{
+    display: block;
     width: 5.5rem;
     height: 5.5rem;
+    margin-right: 3rem;
 
 }
 .app-logo__img{
@@ -61,34 +70,60 @@ a{
 }
 .menu{
     display: none ;
+    /* display: flex; */
+
 }
 .menu__itme{
-
+    margin-right: 1.5rem;
 }
 .menu__link{
-
+    color: #D2D2D2;
 }
-.nav-menu{ 
-    display: none;
 
+
+.nav-menu{ 
+    /* display: none; */
+    background-color: rgb(59, 66, 64);
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: -25rem;
+    width: 25rem;
+    padding: 2.5rem;
+    transition: all 250ms ease-in-out;
+}
+
+.nav-menu--open{
+    left:0;
 }
 
 .mobile-menu{
+    margin-bottom: 3rem;
 
 }
 .mobile-menu__itme{
+    margin-bottom: 1rem;
 
 }
 .mobile-menu__link{
+    color: var(--withe);
+   
+
 
 }
 {
 
 }
 .nav-menu__links{
-
+    display: flex;
 }
 .nav-menu__link{
+    color: var(--withe);
+    border: 1px solid var(--withe);
+    display: block;
+    padding: 1rem;
+    flex-grow: 1;
+    text-align: center;
 
 }
 .nav-menu__link--border{
@@ -101,13 +136,21 @@ a{
 
 }
 .header__link{
+    color: var(--withe);
+    font-family: "Roboto Medium";
+    margin-left: 1.5rem ;
 
 }
 .header__link--border{
+    border: 1px solid var(--withe);
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    
+
 
 }
 .nav__btn{
-    background: #fff;
+    background: var(--withe);
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 2rem;
@@ -123,6 +166,8 @@ a{
     background:var(--orange);
     border-radius: 2rem;
     position: relative;
+    transition: all 250ms ease-in-out;
+    
 }
 
 .nav__btn-line::before,
@@ -133,6 +178,8 @@ a{
     height: 0.3rem;
     background:var(--orange);
     border-radius: 2rem;
+    transition: all 250ms ease-in-out;
+    
 
 }
 
@@ -141,6 +188,19 @@ a{
 }
 .nav__btn-line::after{
     top: .8rem;
+}
+
+
+.nav__btn--open .nav__btn-line{
+    background: transparent;
+}
+
+.nav__btn--open .nav__btn-line::before{
+   transform: translateY(8px) rotate(45deg); 
+}
+
+.nav__btn--open .nav__btn-line::after{
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 
