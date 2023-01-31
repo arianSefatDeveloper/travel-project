@@ -5,7 +5,10 @@
     --primery-font:"roboto" , sans-serif , Arial;
     --primery-font-md:"roboto Medium" , sans-serif , Arial;
     --secendary-font:"Archivo Black" , sans-serif , Arial;
+    --app-bg:#FAF4F2;
+
 }
+
 
 
 
@@ -23,6 +26,9 @@ body{
     line-height: 1.6;
     font-family:var(--primery-font); 
     font-size: 1.6rem;      /* font => 1rem = 10px*/
+    background-color: var(--app-bg);
+
+
 }
 
 
@@ -53,7 +59,7 @@ a{
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-    font-family: var(--primery-font-md);
+    font-family: var(--primery-font-);
 }
 
 
@@ -239,9 +245,9 @@ a{
     background-color: var(--withe);
     color: var(--dark);
 }
-.nav-menu__link--border{
+/* .nav-menu__link--border{
 
-}
+} */
 
 
 /* 
@@ -367,4 +373,69 @@ a{
     background-color:var(--orange);
 
 }
+
+
+
+
+
+/*? --Main-- */
+
+.main{
+
+}
+
+/* 
+================
+     services
+================
+ */
+
+ .services{
+    margin-top: -12rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+    margin-right: -1rem;
+    margin-left: -1rem;
+ }
+ .service{
+    background: rgb(160, 160, 218);
+    margin-bottom: 2rem;
+    width: 30rem;
+    height: 26rem;
+    border-radius: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+    color: var(--dark);
+    background-color: var(--withe);
+    flex-grow: 1;
+    margin-right: 1rem;
+    margin-left: 1rem;
+ }
+ .service__img{
+    display: block;
+}
+.service__title{
+    font-family: var(--secendary-font);
+    font-size: 1.8rem;
+    margin: 1.5rem 0 .8rem 0;
+
+ }
+ .service__captio{
+
+ }
+
+
+ /* 
+======================
+    Destinations
+======================
+ */
+
+ 
+
 
