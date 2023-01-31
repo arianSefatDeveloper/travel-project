@@ -1,10 +1,24 @@
+@media (max-width:351px) {
+    .header-content__title{
+        font-size: 3.5rem;
+    }
+    .header-content__caption{
+        font-size: 1.5rem;
+        max-width: 27.7;
+       
+    }
+   
+    
+}
+
+
 
 @media (min-width:576px) {
    
     
 }
 @media (min-width:768px) {
-    .nav__btn{
+    .nav__btn , .nav-menu{
         display: none;
     }
     .menu{
@@ -14,8 +28,13 @@
     
 }
 @media (min-width:992px) {
-    .header__links{
+    .nav__links{
         display: block;
+    }
+    .header-content__caption{
+        max-width: 64rem;
+        font-size: 2rem;
+     
     }
    
     

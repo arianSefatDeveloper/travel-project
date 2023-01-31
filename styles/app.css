@@ -2,6 +2,9 @@
     --orange:#E76F51;
     --withe:#fff;
     --dark:#3B3735;
+    --primery-font:"roboto" , sans-serif , Arial;
+    --primery-font-md:"roboto Medium" , sans-serif , Arial;
+    --secendary-font:"Archivo Black" , sans-serif , Arial;
 }
 
 
@@ -18,7 +21,7 @@ html{
 
 body{
     line-height: 1.6;
-    font-family: "roboto";
+    font-family:var(--primery-font); 
     font-size: 1.6rem;      /* font => 1rem = 10px*/
 }
 
@@ -35,13 +38,32 @@ a{
 /* --Helper classes-- */
 
 
+
+/* --Component-- */
+
+.btn{
+    border-radius: 10rem;
+    color: var(--withe);
+    background-color: var(--dark); 
+    width: 18rem;
+    height: 5rem;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: var(--primery-font-md);
+}
+
+
 /* --App styles-- */
 
 .header{
     background:linear-gradient(rgba(59,55,53,0.5) , rgba(59,55,53,0.5)) , url(/images/header-bg.jpg);
     background-position: center;
     background-size: cover; 
-    min-height: 55rem;
+    min-height: 85vh;
     border-radius: 0px 0px 8rem 8rem;
 }
 
@@ -57,6 +79,12 @@ a{
     display: flex;
     align-items: center;
 }
+
+/* 
+================
+    App Logo
+================
+ */
 .app-logo{
     display: block;
     width: 5.5rem;
@@ -69,6 +97,12 @@ a{
     height: 100%;
 
 }
+
+/* 
+================
+    Main menu
+================
+ */
 .menu{
     display: none ;
     /* display: flex; */
@@ -106,9 +140,15 @@ a{
 }
 
 
+/* 
+======================
+    Navigation Menu
+======================
+ */
+
 .nav-menu{ 
     /* display: none; */
-    background-color: rgb(59, 66, 64);
+    background-color: var(--dark);
     position: fixed;
     top:0;
     bottom: 0;
@@ -121,6 +161,21 @@ a{
 .nav-menu--open{
     left:0;
 }
+.nav-menu__title{
+    color:var(--orange);
+    font-size: 2rem;
+    font-family: var(--secendary-font);
+    border-bottom: 3px solid var(--orange);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* 
+================
+    MObile menu
+================
+ */
 
 .mobile-menu{
     margin-bottom: 3rem;
@@ -132,13 +187,40 @@ a{
 }
 .mobile-menu__link{
     color: var(--withe);
-   
-
+    position: relative;
+    transition: all 200ms ease-in-out;
+}
+.mobile-menu__link::before{
+    content: " ";
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 0rem;
+    height: 0.3rem;
+    background-color: var(--orange);
+    transition: all 200ms ease-in-out;
+    border-radius: 10rem;
 
 }
-{
+.mobile-menu__link:hover{
+    padding-left: 2rem;
 
 }
+.mobile-menu__link:hover::before{
+    width: 1.6rem;
+
+}
+
+
+/* 
+================
+    Nav Links
+================
+ */
+
+
 .nav-menu__links{
     display: flex;
 }
@@ -149,24 +231,36 @@ a{
     padding: 1rem;
     flex-grow: 1;
     text-align: center;
+    transition: all 250ms ease-in-out;
 
+}
+
+.nav-menu__link:hover{
+    background-color: var(--withe);
+    color: var(--dark);
 }
 .nav-menu__link--border{
 
 }
 
-.header__links{
+
+/* 
+================
+    Header links
+================
+ */
+.nav__links{
 
     display: none;
 
 }
-.header__link{
+.nav__link{
     color: var(--withe);
-    font-family: "Roboto Medium";
+    font-family: var(--primery-font-md);
     margin-left: 1.5rem ;
 
 }
-.header__link--border{
+.nav__link--border{
     border: 1px solid var(--withe);
     padding: 1rem 2.5rem;
     border-radius: 2rem;
@@ -176,11 +270,17 @@ a{
 
 }
 
-.header__link--border:hover{
+.nav__link--border:hover{
     background-color: var(--withe);
 
     color: var(--orange);
 }
+
+/* 
+================
+    Nav menu
+================
+ */
 .nav__btn{
     background: var(--withe);
     width: 5.5rem;
@@ -235,4 +335,36 @@ a{
     transform: translateY(-8px) rotate(-45deg);
 }
 
+
+/* 
+======================
+    Header content
+======================
+ */
+
+
+ .header-content{
+    text-align: center;
+    color: var(--withe);
+    margin-top: 4rem;
+
+ }
+.header-content__title{
+    font-family: var(--secendary-font);
+    font-size: 4.5rem;
+    line-height: 1.2;
+   
+    max-width: 31rem;
+    margin: 0 auto 3rem auto;
+}
+.header-content__caption{
+    font-size:1.8rem ;
+    /* margin-bottom: 3rem; */
+    max-width: 32.7rem;margin: 0 auto 3rem auto;
+
+}
+.header-content__link{
+    background-color:var(--orange);
+
+}
 
