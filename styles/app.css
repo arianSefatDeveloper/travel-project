@@ -16,6 +16,7 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;  /* = font-size = 10 px =>   */
+    scroll-behavior: smooth ;
 }
 
 *,*:after,*::before{
@@ -649,3 +650,163 @@ a{
 
 }
        
+
+/*? --footer-- */
+
+
+
+
+
+.footer{
+    background-color: var(--secondary-color);
+    border-radius: 10rem 10rem 0 0 ;
+    color: var(--dark);
+   padding-bottom: 4rem;
+   
+}
+.footer > .container{
+    padding-top: 10rem;
+}
+
+.footer__title{
+    font-family: var(--secendary-font);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    
+}
+.footer__scroll{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--withe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 2rem;
+
+}
+
+
+.footer__wrapper{
+    /* display: flex;    */
+    justify-content: space-between;
+
+}
+
+
+ /* 
+==================
+    Footer left
+==================
+ */
+
+
+
+
+.footer__left{
+    max-width: 60rem;
+
+}
+.footer-content{
+    margin-bottom: 2rem;
+
+}
+
+.footer-content__discription{
+
+}
+.footer-app{
+    display: none;
+
+}
+.footer__title{
+
+}
+.footer-app__link{
+
+}
+.footer-app__link{
+
+}
+.footer-app__img{
+
+}
+
+ /* 
+==================
+    Footer Right
+==================
+ */
+.footer__right{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+}
+
+
+.footer__list{
+    width: 16rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.footer-pages{
+    
+}
+.footer-pages__itme{
+    
+}
+.footer-pages__link{
+    color: var(--dark);
+    transition: all 250ms ease-in-out;
+    position: relative;
+    
+}
+
+
+
+
+
+
+.footer-pages__link::before{
+    content: " ";
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 0rem;
+    height: 0.3rem;
+    background-color: var(--primery-color);
+    transition: all 200ms ease-in-out;
+    border-radius: 10rem;
+
+}
+.footer-pages__link:hover{
+    color: var(--primery-color);
+    padding-left: 2rem;
+
+}
+.footer-pages__link:hover::before{
+    width: 1.6rem;
+
+}
+
+
+.footer-app--mobile{
+    display: block;
+}
+
+
+
+
+.footer__copy-right{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
