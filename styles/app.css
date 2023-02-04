@@ -1,5 +1,6 @@
 :root{
-    --orange:#E76F51;
+    --primery-color:#E76F51;
+    --secondary-color:#F8E1DB;
     --withe:#fff;
     --dark:#3B3735;
     --primery-font:"roboto" , sans-serif , Arial;
@@ -53,7 +54,7 @@ a{
     background-color: var(--dark); 
     width: 18rem;
     height: 5rem;
-    display: block;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,10 +115,10 @@ a{
     /* display: flex; */
 
 }
-.menu__itme{
-    margin-right: 1.5rem;
-}
+/* .menu__itme{
+} */
 .menu__link{
+    margin-right: 1.5rem;
     color: #D2D2D2;
     transition: color 100ms ease-in;
 }
@@ -135,7 +136,7 @@ a{
     position: absolute;
     width: 4rem;
     height: 0.3rem;
-    background-color: var(--orange);
+    background-color: var(--primery-color);
     border-radius: 10rem;
     transform: translateY(1rem) rotate(45deg);
     z-index: -1;
@@ -168,10 +169,10 @@ a{
     left:0;
 }
 .nav-menu__title{
-    color:var(--orange);
+    color:var(--primery-color);
     font-size: 2rem;
     font-family: var(--secendary-font);
-    border-bottom: 3px solid var(--orange);
+    border-bottom: 3px solid var(--primery-color);
     padding-bottom: 1rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -205,7 +206,7 @@ a{
     margin: auto;
     width: 0rem;
     height: 0.3rem;
-    background-color: var(--orange);
+    background-color: var(--primery-color);
     transition: all 200ms ease-in-out;
     border-radius: 10rem;
 
@@ -279,7 +280,7 @@ a{
 .nav__link--border:hover{
     background-color: var(--withe);
 
-    color: var(--orange);
+    color: var(--primery-color);
 }
 
 /* 
@@ -301,7 +302,7 @@ a{
     display: block;
     width: 3rem;
     height: 0.3rem;
-    background:var(--orange);
+    background:var(--primery-color);
     border-radius: 2rem;
     position: relative;
     transition: all 250ms ease-in-out;
@@ -314,7 +315,7 @@ a{
     position: absolute;
     width: 3rem;
     height: 0.3rem;
-    background:var(--orange);
+    background:var(--primery-color);
     border-radius: 2rem;
     transition: all 250ms ease-in-out;
     
@@ -370,7 +371,7 @@ a{
 
 }
 .header-content__link{
-    background-color:var(--orange);
+    background-color:var(--primery-color);
 
 }
 
@@ -439,6 +440,7 @@ a{
  .destinations{
     text-align: center;
     padding: 7rem 0 ;
+    color: var(--dark);
 
  }
  .destinations__title{
@@ -508,7 +510,7 @@ a{
 
  }
  .place__like-icon--fill{
-    fill: var(--orange);
+    fill: var(--primery-color);
  
 
  }
@@ -525,7 +527,7 @@ a{
  }
  .place__price-text{
     font-family: var(--primery-font-md);
-    color: var(--orange);
+    color: var(--primery-color);
     text-align: center;
  }
  .place__title{
@@ -550,13 +552,100 @@ a{
 
 
  .destinations__btn{
-    color: var(--orange);
-    border:2px solid var(--orange) ;
+    color: var(--primery-color);
+    border:2px solid var(--primery-color) ;
     background-color: transparent;
     transition: all 200ms ease-in;
     margin-top: 3rem;
  }
  .destinations__btn:hover{
     color: var(--withe);
-    background-color: var(--orange);
+    background-color: var(--primery-color);
  }
+
+
+ /* 
+==================
+    Newsletter
+==================
+ */
+
+
+ .newsletter{
+    background-color: var(--secondary-color);
+    border-radius: 2rem;
+    text-align: center;
+    color: var(--dark);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 6rem 0;
+
+ }
+.newsletter__content{
+
+}
+.newsletter__title{
+    font-family: var(--secendary-font);
+    font-size: 3rem;
+    /* max-width: 36rem;
+    margin: 3rem auto; */
+    
+    margin: 1.5rem auto;
+
+}
+.newsletter__caption{
+    font-family: var(--primery-font-md);
+
+}
+.newsletter__email-box{
+    position: relative;
+    background-color: var(--withe);
+    height: 7rem;
+    border-radius: 2rem;
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+
+}
+.newsletter__form{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.newsletter__email-icon{
+    flex-shrink: 0;
+
+}
+.newsletter__input{
+    outline: none;
+    border: none;
+    height: 100%;
+    color: #8D8D8D;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+
+}
+.newsletter__submit{
+    outline: none;
+    border: none;
+    background-color: var(--primery-color);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.newsletter__banner{
+
+}
+.newsletter__img{
+    width: 100%;
+
+}
+       
